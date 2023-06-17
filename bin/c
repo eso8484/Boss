@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "please enter the name of the file you want make executable:"
+read name
+chmod u+x $name

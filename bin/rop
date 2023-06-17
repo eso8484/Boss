@@ -1,0 +1,25 @@
+#!/bin/bash
+echo "Please enter the firt 5 characters of your repo name"
+read repo
+if ["$repo"="alx-s"]; then
+	cd /alx-system_engineering-devops
+		echo "please enter the first 4 character 			of your directory"
+		read dirp
+		if ["$dirp"="0x00"]; then
+			cd /0x00-shell_basics  
+		elif ["$dirp"="0x01"]; then
+			cd /0x01-shell_permissions
+		elif ["$dirp"="0x02"]; then
+			cd /0x02-shell_redirections
+		else
+			cd /0x03-shell_variables_expansions
+		fi
+elif [['$repo'=='alx-p']]; then
+	cd /alx-pre_course/0x01-git
+elif [['$repo'=='z' || '$repo'=='zero_']]; then
+	cd /zero_day/0x00-vagrant
+elif [['$repo'=='alx-z']]; then
+	cd /alx-zero_day/0x03-git
+else
+	cd /Boss
+fi

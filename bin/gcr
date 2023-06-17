@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "please enter the name of the repo to be cloned"
+read repo
+git clone https://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@github.com/eso8484/$repo.git
